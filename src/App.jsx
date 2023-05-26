@@ -1,15 +1,16 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import bg from "./assets/images/bg.jpg";
 import "./App.css";
-import Checkout from "./components/checkout/checkout";
+import MainContainer from "./components/checkout/checkout";
 
 function App() {
   ``;
   return (
     <>
-      <div className="border border-2">
-        <Checkout />
+      <div class="bg-no-repeat bg-auto bg-left bg-hero">
+        {" "}
+        <div class="py-20 flex justify-center items-center w-[90%] h-auto max-w-[375px] mx-auto lg:max-w-[1000px] lg:h-screen">
+          <MainContainer />
+        </div>
       </div>
     </>
   );

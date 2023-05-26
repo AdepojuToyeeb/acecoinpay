@@ -9,18 +9,21 @@
 // import Details from "./details/Details";
 
 import { IoCloseOutline } from "react-icons/io5";
+import Card from "../card/card";
+import Details from "../details/Details";
 
-function Checkout() {
+const MainContainer=()=> {
   return (
     <>
       <div class="bg-white w-full">
         <div class="flex justify-end items-center">
           <span class="cursor-pointer px-2 py-1 bg-gray-200 bg-opacity-80 flex justify-center items-center">
-            <IoCloseOutline className="text-black h-6 w-6" />
+            <IoCloseOutline className="text-black h-[24px] w-[24px]" />
           </span>
         </div>
         <div class="w-full p-8 flex flex-col lg:flex-row lg:justify-between lg:items-start">
-          - Content here --
+          <Card />
+          <Details/>
         </div>
       </div>
     </>
@@ -39,4 +42,4 @@ function Checkout() {
   );
 }
 
-export default Checkout;
+export default MainContainer;
